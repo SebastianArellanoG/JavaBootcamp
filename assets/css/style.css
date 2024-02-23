@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 400;
+  font-weight:400;
  }
 
  header  {
@@ -35,12 +35,12 @@
 }
  #desc-section {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.7fr 1.2fr;
   justify-items: center;
   align-items: center;
   background-color: #000000;
-  gap: 20px;
-  padding: 20px 70px;
+  gap: 200px;
+  padding: 50px 180px;
 
  }
 
