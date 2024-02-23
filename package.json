@@ -1,0 +1,19 @@
+{
+  "name": "javabootcamp",
+  "version": "1.0.0",
+  "description": "En este repositorio se encuentran mis actividades del Bootcamp \"Java Full Stack\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SebastianArellanoG/JavaBootcamp.git"
+  },
+  "author": "Naitisabes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianArellanoG/JavaBootcamp/issues"
+  },
+  "homepage": "https://github.com/SebastianArellanoG/JavaBootcamp#readme"
+}
