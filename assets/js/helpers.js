@@ -1,12 +1,11 @@
 import { cupones } from './data.js';
 const cuponesContainer = document.getElementById('content');
 
-console.log(cupones);
 Object.keys(cupones).forEach((cuponId) => {
   const cupon = cupones[cuponId];
 
   const cuponComponent = `
-        <div class="card" style="width: 18rem; margin: 20px auto;">
+        <div class="card" style="width: 19rem; margin: 20px auto;">
   <img src="${cupon.imglink}" class="card-img-top" alt="${cupon.title}" />
   <div class="card-body" >
     <h5 class="card-title">${cupon.title}</h5>
