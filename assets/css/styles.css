@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Open-sans;
+  src: url(/assets/fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+  src: url(/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+  font-family: Open-sans;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+
+.bg-pink {
+  background-color: #e83e8c;
+}
+.logo {
+  width: 132px;
+  height: auto;
+}
