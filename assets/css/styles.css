@@ -19,3 +19,12 @@
   width: 132px;
   height: auto;
 }
+
+.bg--info {
+  background-color: #17a2b8;
+}
+
+.footer-sections {
+  min-height: 170px;
+  max-height: 200px;
+}
