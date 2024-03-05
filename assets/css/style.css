@@ -1,0 +1,68 @@
+* {
+  font-family: Raleway;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-weight: regular;
+  color: #373a3c;
+}
+
+.bg-gray {
+  background-color: #373a3c;
+}
+
+.logo {
+  width: 170px;
+  height: auto;
+}
+.hero {
+  background-image: url('/assets/img/bg-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45svh;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  color: #fff;
+  padding-right: 10vh;
+  text-align: end;
+}
+
+#icons-section {
+  background-color: #fff;
+  opacity: 98%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+#caracteristicas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+}
+#icons-section h2 {
+  font-size: 40px;
+  margin: 20px;
+}
+
+#icons-section p {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.mis-trabajos {
+  display: flex;
+  flex-direction: column;
+}
+.trabajos {
+  display: flex;
+  gap: 40px;
+}
+.svg {
+  width: auto;
+  height: 40px;
+}
