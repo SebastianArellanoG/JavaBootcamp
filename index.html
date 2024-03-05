@@ -16,7 +16,7 @@
     />
   </head>
   <body>
-    <nav class="navbar bg-gray navbar-expand-lg">
+    <nav class="navpos navbar bg-gray navbar-expand-lg sticky-top">
       <div class="container-fluid mx-5">
         <div>
           <a class="navbar-brand" href="/">
@@ -46,66 +46,169 @@
         sagittis.
       </p>
       <div>
-
-        <button type="button" class="btn btn-outline-info text-white ">Trabajos</button>
-        <button type="button" class="btn btn-info text-white ">Contacto</button>
+        <button
+          type="button"
+          class="btn btn-outline-info text-white m-3"
+        >
+          Trabajos
+        </button>
+        <button type="button" class="btn btn-info text-white">
+          Contacto
+        </button>
       </div>
     </div>
 
-     <section id="icons-section"">
-    <h2>Acerca de mi</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
+    <section id="icons-section" class="container-fluid">
+      <h2>Acerca de mi</h2>
+      <span class="aboutmetext px-5"
+        >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus
+        porttitor tincidunt. Donec imperdiet augue nec aliquet
+        sagittis.</span
+      >
 
-    <div id="caracteristicas">
-      <div class="svgtext">
-        <img src="/assets/svg/camera-svgrepo-com.svg" alt="" class="svg">
-        <p>Fotógrafa de comida</p>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</span>
-    </div>
-
-    <div class="svgtext">
-      <img class="svg" src="/assets/svg/bullhorn-svgrepo-com.svg" alt="">
-      <p>Crítica culinaria</p>
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</span>
-
-    </div>
-    <div class="svgtext">
-      <img src="/assets/svg/map-svgrepo-com.svg" alt="" class="svg">
-     <p>Bloggera de viajes</p>
-     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</span>
-    </div>
-    </div>
-  </section>
-  <section class="mis-trabajos">
-    <h1>Mis Trabajos</h1>
-
-      <div class="trabajos">
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="my-3 d-flex flex-wrap justify-content-center">
+        <div class="svgtext">
+          <img
+            src="/assets/svg/camera-svgrepo-com.svg"
+            alt=""
+            class="svg"
+          />
+          <h5>Fotógrafa de comida</h5>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Etiam a mauris id purus blandit dapibus.</span
+          >
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+        <div class="svgtext">
+          <img
+            class="svg"
+            src="/assets/svg/bullhorn-svgrepo-com.svg"
+            alt=""
+          />
+          <h5>Crítica culinaria</h5>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Etiam a mauris id purus blandit dapibus.</span
+          >
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+        <div class="svgtext">
+          <img
+            src="/assets/svg/map-svgrepo-com.svg"
+            alt=""
+            class="svg"
+          />
+          <h5>Bloggera de viajes</h5>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Etiam a mauris id purus blandit dapibus.</span
+          >
         </div>
       </div>
     </section>
+    <section class="mis-trabajos">
+      <h1 class="text-white p-5">Mis Trabajos</h1>
+
+      <div
+        class="trabajos my-5 d-flex flex-wrap gap-5 justify-content-center"
+      >
+        <div class="card" style="width: 18rem">
+          <img
+            src="/assets/img/card-1.jpg"
+            class="card-img-top imgcard"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Asado en la Patagonia</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and
+              make up the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-outline-info y">Ver más</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="/assets/img/card-2.jpg"
+            class="card-img-top imgcard"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Papas del fin del mundo</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and
+              make up the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-outline-info">Ver más</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="/assets/img/card-3.jpg"
+            class="card-img-top imgcard"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Salmones de Alaska</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and
+              make up the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-outline-info">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <form action=""></form>
+    </section>
+    <form class="m-5 align-content-end">
+      <div
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1>Contáctame</h1>
+        <span class="my-3"
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Etiam a mauris id purus blandit dapibus. Nunc at enim et
+          lacus porttitor tincidunt. Donec imperdiet augue nec aliquet
+          sagittis.</span
+        >
+      </div>
+      <div class="form-group">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Nombre</label>
+          <input
+            type="text"
+            class="form-control my-3"
+            id="form-control"
+            placeholder="Nombre"
+          />
+        </div>
+        <label for="exampleFormControlInput1">Email address</label>
+        <input
+          type="email"
+          class="form-control my-3"
+          id="form-control"
+          placeholder="name@example.com"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Mensaje</label>
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-info m-4">
+        Submit
+      </button>
+    </form>
+    <footer class="bg-dark text-white text-center py-3">
+      Olivia Ros 2019. Todos los derechos reservados
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
