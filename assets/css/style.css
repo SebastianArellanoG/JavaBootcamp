@@ -1,0 +1,36 @@
+* {
+  font-family: roboto;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(/assets/font/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: roboto-ligth;
+  src: url(/assets/font/Roboto-Light.ttf);
+}
+.bg-green {
+  background-color: #28a745;
+}
+
+.logo {
+  max-height: 25px;
+}
+
+.text-gray {
+  color: #707070;
+}
+.text-green {
+  color: #28a745;
+}
+.text-ligth {
+  font-family: roboto-ligth;
+}
+.nav {
+  height: 62px;
+}
