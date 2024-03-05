@@ -67,10 +67,7 @@ nav {
   background-color: #17a2b8;
   align-items: center;
 }
-.trabajos {
-  display: flex;
-  gap: 40px;
-}
+
 .svg {
   width: auto;
   height: 40px;
