@@ -14,10 +14,21 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (
+        tooltipTriggerEl
+      ) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
     <nav
-      class="navbar bg-gray"
+      class="navbar bg-gray px-5"
       style="height: 60px; min-width: 300px"
     >
       <div class="container-fluid">
@@ -53,10 +64,25 @@
           >
             <span class="sub-title">110 MIN / 6 A 8 PORCIONES</span>
             <div class="py-3">
-              <button type="button" class="btn btn-outline-secondary">
+              <button
+                id="enviarCorreo"
+                type="button"
+                class="btn btn-outline-secondary"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Presiona para enviar a tu correo"
+              >
                 Enviar por correo
               </button>
-              <button type="button" class="btn btn-outline-secondary">
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Agrega esta receta a tus favoritos"
+              >
                 Añadir a favoritos
               </button>
             </div>
@@ -241,7 +267,7 @@
       <div class="d-flex justify-content-center align-content-center">
         <h1>RECETAS RELACIONADAS</h1>
       </div>
-      <div class="d-flex gap-5 flex-wrap">
+      <div class="d-flex gap-5 flex-wrap justify-content-center py-5">
         <div class="card" style="width: 18rem">
           <img
             src="/assets/img/recipe-card-1.png"
@@ -304,7 +330,7 @@
         </div>
 
         <button type="submit" class="btn btn-outline-light my-4 px-5">
-          Enviar
+          Empezar
         </button>
       </form>
     </section>
@@ -319,6 +345,12 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="/assets/js/script.js"></script>
   </body>
 </html>
