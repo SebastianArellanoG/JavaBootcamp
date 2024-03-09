@@ -17,7 +17,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $('.card-title').click(function () {
-    $(this).closest('.card').toggle();
+  $('#titletoggle').click(function () {
+    $('.card').toggle();
   });
 });
