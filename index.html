@@ -16,8 +16,10 @@
     <title>Viajes Chile</title>
   </head>
   <body>
+
+
     <nav
-      class="navbar px-5 fixed-top bg-transparent"
+      class="navbar px-5 fixed-top   bg-transparent"
       style="height: 60px; min-width: 300px"
     >
       <div class="container-fluid bg-transparent">
@@ -30,18 +32,18 @@
           <span class="logo bg-transparent">Viajes Chile</span>
         </div>
 
-        <div class="text-light d-none d-lg-block px-5 bg-transparent">
+        <div class="text-light px-5 bg-transparent d-grid d-lg-flex ">
           <a href="/" class="text-reset link bg-transparent">
             Inicio
           </a>
-          <a href="/" class="text-reset link bg-transparent">
+          <a href="/#qsomos" class="text-reset link bg-transparent">
             Quienes somos
           </a>
-          <a href="/" class="text-reset link bg-transparent">
+          <a href="/#destacados" class="text-reset link bg-transparent">
             Destacado</a
           >
-          <a href="/" class="text-reset link bg-transparent">
-            Contenido
+          <a href="/#contacto" class="text-reset link bg-transparent">
+            Contacto
           </a>
         </div>
         <!-- <div class="d-block d-lg-none bg-transparent"><img
@@ -82,27 +84,36 @@
       </div>
     </section>
     <section
-      class="d-flex flex-column justify-content-center align-items-center text-center"
+      class="d-flex flex-column justify-content-center align-items-center text-center d-none d-lg-flex"
     >
-      <div class="py-2 border-bottom w-75">
-        <h1>¿QUIENES SOMOS?</h1>
+      <div class="py-2 border-bottom w-75 ">
+        <h1 id="qsomos" class="title">¿QUIENES SOMOS?</h1>
       </div>
 
       <div class="py-3">
         <div class="container text-center">
           <div class="row align-items-start">
             <div class="col">
-              <img src="/assets/svg/1.svg" alt="" />
-              <p>One of three columns</p>
-            </div>
-            <div class="col">
-              <p>One of three columns</p>
+              <div class=" w-100  bg-aqua">
 
-              <img src="/assets/svg/2.svg" alt="" />
+                <img class="bg-aqua" src="/assets/svg/1.svg" alt="" />
+              </div>
+
+              <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The</p>
             </div>
             <div class="col">
-              <img src="/assets/svg/3.svg" alt="" />
-              <p>One of three columns</p>
+              <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The</p>
+              <div class="w-100 bg-aqua">
+
+                <img class="bg-aqua" src="/assets/svg/2.svg" alt="" />
+              </div>
+
+            </div>
+            <div class="col">
+              <div class="w-100  bg-aqua">
+                <img  class="bg-aqua" src="/assets/svg/3.svg" alt="" />
+              </div>
+              <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The</p>
             </div>
           </div>
         </div>
@@ -114,7 +125,7 @@
       <div
         class="w-75 d-flex justify-content-center align-items-center my-3 border-bottom"
       >
-        <h1>DESTACADOS</h1>
+        <h1 id="destacados" class="title">DESTACADOS</h1>
       </div>
       <div class="d-flex flex-wrap gap-4 justify-content-center">
         <div class="card" style="width: 18rem">
@@ -178,7 +189,7 @@
         class="d-flex flex-column justify-content-center align-items-center text-center border-bottom w-75"
       >
         <div class="py-2">
-          <h1 class="">CONTACTO</h1>
+          <h1 id="contacto" class="title">CONTACTO</h1>
         </div>
       </div>
       <div class="px-5 w-75 py-4">
@@ -214,12 +225,32 @@
         </div>
         <div class="mb-3">
           <button
+            id="liveToastBtn"
             type="submit"
             class="btn mb-3 text-white"
             style="background-color: rgb(0, 211, 211)"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Enviar formulario"
           >
             Enviar
           </button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3 bg-transparent ">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+     Su mensajito se ha recibido exitosamente.
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     </section>
@@ -254,5 +285,28 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+     <!-- tooltip loader -->
+       <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (
+        tooltipTriggerEl
+      ) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+    <!-- toast invoke-->
+    <script>
+      const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
+    </script>
   </body>
 </html>
