@@ -52,7 +52,7 @@
         />
       </div> -->
     </nav>
-    <section>
+    <section >
       <div
         id="carouselExampleSlidesOnly"
         class="carousel slide"
@@ -285,28 +285,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-     <!-- tooltip loader -->
-       <script>
-      var tooltipTriggerList = [].slice.call(
-        document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      );
-      var tooltipList = tooltipTriggerList.map(function (
-        tooltipTriggerEl
-      ) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-      });
-    </script>
-    <!-- toast invoke-->
-    <script>
-      const toastTrigger = document.getElementById('liveToastBtn')
-const toastLiveExample = document.getElementById('liveToast')
-
-if (toastTrigger) {
-  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-  toastTrigger.addEventListener('click', () => {
-    toastBootstrap.show()
-  })
-}
-    </script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>

@@ -44,3 +44,9 @@ html {
 .bg-nav {
   background-color: rgb(0, 0, 0, 0.4);
 }
+
+.carousel img {
+  max-width: 100%;
+  max-height: 50svh;
+  object-fit: cover;
+}
