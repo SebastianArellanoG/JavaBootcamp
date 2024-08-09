@@ -1,0 +1,2 @@
+Producto1,123123,Descripcion1,123123,Talla1,Marca1,Color1
+Producto2,123,Descripcion2,123,Talla2,Marca2,Color2
