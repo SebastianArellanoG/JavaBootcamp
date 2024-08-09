@@ -1,0 +1,2 @@
+Patente,Edad,Fecha,NombreDeVenta
+A444444,19,20240515,VentaSkywalker

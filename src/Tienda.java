@@ -2,7 +2,7 @@ import java.util.List;
 
 public class Tienda {
     private Vendedor vendedor;
-    private List<Cliente> clientes;
+    private List<Cliente> cliente;
     private int stock;
     private List<Vehiculo> vehiculos;
 
@@ -10,13 +10,13 @@ public class Tienda {
 
     public Tienda(Vendedor vendedor, List<Cliente> clientes, int stock, List<Vehiculo> vehiculos) {
         this.vendedor = vendedor;
-        this.clientes = clientes;
+        this.cliente = clientes;
         this.stock = stock;
         this.vehiculos = vehiculos;
     }
 
     public String existeStock() {
-        return String.format("Cantidad de Stock es: %d", this.stock);
+        return "Cantidad de Stock es: " + this.stock;
     }
 
     public Vendedor getVendedor() {
@@ -27,12 +27,12 @@ public class Tienda {
         this.vendedor = vendedor;
     }
 
-    public List<Cliente> getClientes() {
-        return clientes;
+    public List<Cliente> getCliente() {
+        return cliente;
     }
 
-    public void setClientes(List<Cliente> clientes) {
-        this.clientes = clientes;
+    public void setCliente(List<Cliente> cliente) {
+        this.cliente = cliente;
     }
 
     public int getStock() {
@@ -53,7 +53,11 @@ public class Tienda {
 
     @Override
     public String toString() {
-        return String.format("Tienda{vendedor=%s, clientes=%s, stock=%d, vehiculos=%s}",
-                              vendedor, clientes, stock, vehiculos);
+        return "Tienda{" +
+                "vendedor=" + vendedor +
+                ", cliente=" + cliente +
+                ", stock=" + stock +
+                ", vehiculos=" + vehiculos +
+                '}';
     }
 }

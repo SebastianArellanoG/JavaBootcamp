@@ -1,0 +1,2 @@
+Patente,Edad,Fecha,NombreDeVenta
+A666666,23,20240517,VentaOrgana

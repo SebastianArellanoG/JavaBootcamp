@@ -1,0 +1,2 @@
+Patente,Edad,Fecha,NombreDeVenta
+A555555,45,20240505,VentaVader
